@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ProductCard from "@/components/ProductCard";
 import ReadyLabel from "@/components/ReadyLabel";
+import SectionBanner from "@/components/SectionBanner";
 import { Product } from "@/types";
 import { useRouter } from "next/navigation";
 import { productsData } from "@/data/products";
@@ -116,7 +117,7 @@ export default function Home() {
                   {currentProduct.description}
                 </p>
                 {currentProduct.comingSoon ? (
-                  <ReadyLabel className="mt-4 bg-gradient-to-r from-primary via-primary to-accent text-[10px] tracking-[0.4em]" />
+                  <ReadyLabel className="mt-4" />
                 ) : (
                   <button
                     onClick={() =>
@@ -192,19 +193,12 @@ export default function Home() {
       {/* Featured Products Section - Enhanced */}
       <section className="bg-background px-4 py-20">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-16 text-center">
-            <p className="text-xs uppercase tracking-[0.4em] text-charcoal/60">
-              this week’s edit
-            </p>
-            <h2 className="mt-4 text-4xl font-bold text-primary md:text-5xl">
-              The Veston Featured Drop
-            </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-              A rotating ensemble of objects with utility, tactility, and quiet
-              luxury. Limited quantities — once sold out, pieces move to the
-              archive.
-            </p>
-          </div>
+          <SectionBanner
+            eyebrow="this week’s edit"
+            title="The Veston Featured Drop"
+            description="A rotating ensemble of objects with utility, tactility, and quiet luxury. Limited quantities — once sold out, pieces move to the archive."
+            className="mb-16"
+          />
           <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {featuredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
@@ -224,14 +218,13 @@ export default function Home() {
       {/* Veston experience */}
       <section className="bg-secondary/50 px-4 py-20">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-12 text-center">
-            <p className="text-xs uppercase tracking-[0.4em] text-charcoal/60">
-              the veston experience
-            </p>
-            <h3 className="mt-3 text-3xl font-bold text-primary">
-              Designed for people who obsess over the details
-            </h3>
-          </div>
+          <SectionBanner
+            eyebrow="the veston experience"
+            title="Designed for people who obsess over the details"
+            titleTag="h3"
+            titleClassName="text-3xl md:text-4xl"
+            className="mb-12"
+          />
           <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-3">
             {[
               {
