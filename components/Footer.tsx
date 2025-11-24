@@ -53,10 +53,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:support@veston.ng"
+                  href="mailto:operations@vestontechnologies.com"
                   className="transition-colors hover:text-accent"
                 >
-                  support@veston.ng
+                  operations@vestontechnologies.com
                 </a>
               </li>
               <li className="text-gray-400">1 Adedeji Adekola, Lekki Lagos.</li>

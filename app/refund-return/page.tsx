@@ -54,12 +54,12 @@ export default function RefundReturnPage() {
               <li>
                 Contact our concierge team at{" "}
                 <a
-                  href="mailto:support@veston.ng"
+                  href="mailto:operations@vestontechnologies.com"
                   className="text-accent hover:underline"
                 >
-                  support@veston.ng
+                  operations@vestontechnologies.com
                 </a>{" "}
-                or call +234 813 000 7722 to initiate a return
+                or call +234 810 000 0000 to initiate a return
               </li>
               <li>Provide your order number and reason for return</li>
               <li>
@@ -173,14 +173,14 @@ export default function RefundReturnPage() {
               <li>
                 <strong>Email:</strong>{" "}
                 <a
-                  href="mailto:support@veston.ng"
+                  href="mailto:operations@vestontechnologies.com"
                   className="text-accent hover:underline"
                 >
-                  support@veston.ng
+                  operations@vestontechnologies.com
                 </a>
               </li>
               <li>
-                <strong>Phone:</strong> +234 813 000 7722
+                <strong>Phone:</strong> +234 810 000 0000
               </li>
               <li>
                 <strong>Hours:</strong> Monday - Friday, 9AM - 6PM WAT

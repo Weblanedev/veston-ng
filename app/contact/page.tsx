@@ -95,11 +95,11 @@ export default function ContactPage() {
                         Email
                       </h3>
                       <a
-                        href="mailto:support@veston.ng"
+                        href="mailto:operations@vestontechnologies.com"
                         className="text-gray-600 hover:text-accent transition-colors text-lg"
                       >
-                        support@veston.ng
-                      </a>
+                        operations@vestontechnologies.com
+                      </a>  
                     </div>
                   </div>
                 </div>
@@ -131,7 +131,7 @@ export default function ContactPage() {
                         href="tel:+2348130007722"
                         className="text-gray-600 hover:text-accent transition-colors text-lg"
                       >
-                        +234 813 000 7722
+                        +234 810 000 0000
                       </a>
                     </div>
                   </div>

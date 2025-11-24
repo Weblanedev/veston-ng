@@ -184,10 +184,10 @@ export default function PrivacyPage() {
             </p>
             <ul className="list-none text-gray-700 space-y-2">
               <li>
-                <strong>Email:</strong> support@veston.ng
+                <strong>Email:</strong> operations@vestontechnologies.com
               </li>
               <li>
-                <strong>Phone:</strong> +234 813 000 7722
+                <strong>Phone:</strong> +234 810 000 0000
               </li>
               <li>
                 <strong>Address:</strong> 1 Adedeji Adekola, Lekki, Lagos.
