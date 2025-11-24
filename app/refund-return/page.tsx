@@ -7,9 +7,6 @@ export default function RefundReturnPage() {
         </h1>
 
         <div className="prose prose-lg max-w-none">
-          <p className="text-gray-600 mb-6">
-            <strong>Last Updated:</strong> {new Date().toLocaleDateString()}
-          </p>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-primary mb-4">
@@ -54,12 +51,12 @@ export default function RefundReturnPage() {
               <li>
                 Contact our concierge team at{" "}
                 <a
-                  href="mailto:operations@vestontechnologies.com"
+                  href="mailto:info@vestontechnologies.com"
                   className="text-accent hover:underline"
                 >
-                  operations@vestontechnologies.com
+                  info@vestontechnologies.com
                 </a>{" "}
-                or call +234 810 000 0000 to initiate a return
+                to initiate a return
               </li>
               <li>Provide your order number and reason for return</li>
               <li>
@@ -173,14 +170,11 @@ export default function RefundReturnPage() {
               <li>
                 <strong>Email:</strong>{" "}
                 <a
-                  href="mailto:operations@vestontechnologies.com"
+                  href="mailto:info@vestontechnologies.com"
                   className="text-accent hover:underline"
                 >
-                  operations@vestontechnologies.com
+                  info@vestontechnologies.com
                 </a>
-              </li>
-              <li>
-                <strong>Phone:</strong> +234 810 000 0000
               </li>
               <li>
                 <strong>Hours:</strong> Monday - Friday, 9AM - 6PM WAT

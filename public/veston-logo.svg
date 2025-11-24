@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120">
+  <defs>
+    <linearGradient id="veston_gold_mark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAD961" />
+      <stop offset="60%" stop-color="#F7B733" />
+      <stop offset="100%" stop-color="#E67E22" />
+    </linearGradient>
+    <linearGradient id="veston_highlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.8)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0.1)" />
+    </linearGradient>
+  </defs>
+
+  <rect width="120" height="120" rx="28" fill="url(#veston_gold_mark)" />
+  <rect
+    x="8"
+    y="8"
+    width="104"
+    height="104"
+    rx="24"
+    fill="none"
+    stroke="url(#veston_highlight)"
+    stroke-width="2"
+  />
+  <path
+    d="M42 34L60 72L78 34"
+    stroke="#FFFFFF"
+    stroke-width="7"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M36 46L52.5 64.5"
+    stroke="#FEEBC8"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+
+  <g transform="translate(140, 38)">
+    <text
+      font-family="Inter, 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif"
+      font-size="42"
+      font-weight="800"
+      fill="#101828"
+      letter-spacing="0.025em"
+    >
+      Veston
+    </text>
+  </g>
+</svg>
+

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Product } from "@/types";
+import ReadyLabel from "./ReadyLabel";
 import { useCart } from "@/context/CartContext";
 
 interface ProductCardProps {
@@ -49,12 +50,16 @@ export default function ProductCard({ product }: ProductCardProps) {
               Veston
             </span>
           </div>
-          <button
-            onClick={handleAddToCart}
-            className="w-full rounded-2xl bg-primary/90 px-4 py-3 text-sm font-semibold uppercase tracking-wide text-white transition-all duration-300 hover:bg-primary hover:shadow-lg"
-          >
-            Add to Cart
-          </button>
+          {product.comingSoon ? (
+            <ReadyLabel />
+          ) : (
+            <button
+              onClick={handleAddToCart}
+              className="w-full rounded-2xl bg-primary/90 px-4 py-3 text-sm font-semibold uppercase tracking-wide text-white transition-all duration-300 hover:bg-primary hover:shadow-lg"
+            >
+              Add to Cart
+            </button>
+          )}
         </div>
       </div>
     </Link>

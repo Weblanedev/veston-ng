@@ -1,22 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
-    <linearGradient id="vestonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F1C2E" />
-      <stop offset="100%" stop-color="#F9A826" />
+    <linearGradient id="vestonGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAD961" />
+      <stop offset="55%" stop-color="#F7B733" />
+      <stop offset="100%" stop-color="#E67E22" />
+    </linearGradient>
+    <linearGradient id="vestonSheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.7)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0.05)" />
     </linearGradient>
   </defs>
-  <rect width="64" height="64" rx="16" fill="url(#vestonGradient)" />
-  <text
-    x="50%"
-    y="50%"
-    font-family="Inter, 'Helvetica Neue', Arial, sans-serif"
-    font-size="32"
-    font-weight="700"
-    text-anchor="middle"
-    fill="#FFFFFF"
-    dy="10"
-  >
-    V
-  </text>
+  <rect width="64" height="64" rx="18" fill="url(#vestonGold)" />
+  <rect
+    width="56"
+    height="56"
+    x="4"
+    y="4"
+    rx="16"
+    fill="none"
+    stroke="url(#vestonSheen)"
+    stroke-width="1.5"
+  />
+  <path
+    d="M16 16L32 48L48 16"
+    stroke="#FFFFFF"
+    stroke-width="5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M13 24L25.5 38.5"
+    stroke="#FEEBC8"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
 </svg>
 

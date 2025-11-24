@@ -3,9 +3,10 @@
 import { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Image from "next/image";
-import { useCart } from "@/context/CartContext";
 import { Product } from "@/types";
 import { productsData } from "@/data/products";
+import ReadyLabel from "@/components/ReadyLabel";
+import { useCart } from "@/context/CartContext";
 
 export default function ProductDetailPage() {
   const params = useParams();
@@ -48,16 +49,17 @@ export default function ProductDetailPage() {
   }
 
   const handleAddToCart = () => {
+    if (!product) return;
+
     const productToAdd = {
       ...product,
       selectedColor: selectedColor || product.color,
       selectedSize: selectedSize || product.spec,
     };
     addToCart(productToAdd);
-    // Redirect to checkout page after adding to cart
     setTimeout(() => {
       router.push("/checkout");
-    }, 500); // Small delay to show the toast notification
+    }, 500);
   };
 
   return (
@@ -173,13 +175,17 @@ export default function ProductDetailPage() {
               <p className="text-gray-700">{product.spec}</p>
             </div>
 
-            {/* Add to Cart Button */}
-            <button
-              onClick={handleAddToCart}
-              className="w-full rounded-2xl bg-primary px-6 py-4 text-lg font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-primary/90 hover:shadow-xl"
-            >
-              Add to Cart
-            </button>
+            {/* Availability */}
+            {product.comingSoon ? (
+              <ReadyLabel className="mt-8" />
+            ) : (
+              <button
+                onClick={handleAddToCart}
+                className="mt-6 w-full rounded-2xl bg-primary px-6 py-4 text-lg font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-primary/90 hover:shadow-xl"
+              >
+                Add to Cart
+              </button>
+            )}
           </div>
         </div>
       </div>

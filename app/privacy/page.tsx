@@ -7,10 +7,6 @@ export default function PrivacyPage() {
         </h1>
 
         <div className="prose prose-lg max-w-none">
-          <p className="text-gray-600 mb-6">
-            <strong>Last Updated:</strong> {new Date().toLocaleDateString()}
-          </p>
-
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-primary mb-4">
               1. Introduction
@@ -170,7 +166,7 @@ export default function PrivacyPage() {
             <p className="text-gray-700 mb-4">
               We may update this Privacy Policy from time to time. We will
               notify you of any changes by posting the new Privacy Policy on
-              this page and updating the "Last Updated" date.
+              this page.
             </p>
           </section>
 
@@ -184,13 +180,11 @@ export default function PrivacyPage() {
             </p>
             <ul className="list-none text-gray-700 space-y-2">
               <li>
-                <strong>Email:</strong> operations@vestontechnologies.com
+                <strong>Email:</strong> info@vestontechnologies.com
               </li>
               <li>
-                <strong>Phone:</strong> +234 810 000 0000
-              </li>
-              <li>
-                <strong>Address:</strong> 1 Adedeji Adekola, Lekki, Lagos.
+                <strong>Address:</strong> No 1 Dynasty Residence, Orchid Road,
+                Lagos.
               </li>
             </ul>
           </section>

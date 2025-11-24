@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import Logo from "./Logo";
 
 export default function Navbar() {
   const { getTotalItems } = useCart();
@@ -43,15 +44,7 @@ export default function Navbar() {
     <>
       <nav className="sticky top-0 z-50 border-b border-secondary/60 bg-white/90 backdrop-blur-xl shadow-[0_10px_45px_rgba(11,28,46,0.08)] animate-slideDown">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <Link
-            href="/"
-            className="group flex flex-col text-primary transition-all duration-300 hover:text-accent animate-slideInLeft"
-          >
-            <span className="text-2xl font-black tracking-wide">Veston</span>
-            <span className="text-[10px] font-semibold uppercase tracking-[0.4em] text-charcoal/60 transition-all duration-300 group-hover:text-accent sm:text-xs">
-              Commerce
-            </span>
-          </Link>
+          <Logo className="animate-slideInLeft" />
 
           <div className="flex items-center gap-3 md:gap-6">
             <Link

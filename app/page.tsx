@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import ProductCard from "@/components/ProductCard";
+import ReadyLabel from "@/components/ReadyLabel";
 import { Product } from "@/types";
 import { useRouter } from "next/navigation";
 import { productsData } from "@/data/products";
@@ -98,19 +99,6 @@ export default function Home() {
                 Learn About Veston
               </button>
             </div>
-            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-              {stats.map((stat) => (
-                <div
-                  key={stat.label}
-                  className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur"
-                >
-                  <p className="text-2xl font-bold">{stat.value}</p>
-                  <p className="text-[11px] uppercase tracking-[0.4em] text-white/70">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
-            </div>
             {currentProduct && (
               <div className="max-w-lg rounded-2xl border border-white/20 bg-white/85 p-6 text-primary shadow-2xl backdrop-blur">
                 <p className="text-xs uppercase tracking-[0.3em] text-charcoal/60">
@@ -127,6 +115,18 @@ export default function Home() {
                 <p className="mt-2 text-sm text-gray-600 line-clamp-2">
                   {currentProduct.description}
                 </p>
+                {currentProduct.comingSoon ? (
+                  <ReadyLabel className="mt-4 bg-gradient-to-r from-primary via-primary to-accent text-[10px] tracking-[0.4em]" />
+                ) : (
+                  <button
+                    onClick={() =>
+                      router.push(`/products/${currentProduct.id}`)
+                    }
+                    className="mt-4 w-full rounded-2xl bg-primary px-6 py-3 text-sm font-semibold uppercase tracking-[0.4em] text-white transition hover:bg-primary/90"
+                  >
+                    Shop Featured
+                  </button>
+                )}
               </div>
             )}
           </div>
@@ -235,14 +235,14 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-3">
             {[
               {
-                title: "Slow, Intentional Sourcing",
+                title: "Intentional Sourcing",
                 description:
-                  "We work directly with artisans and ethical factories to keep every piece traceable.",
+                  "We work directly with vendors to ensure the best quality products.",
               },
               {
                 title: "Express Lagos Dispatch",
                 description:
-                  "Order by 2pm for same-day delivery within Lagos and 72-hour shipping nationwide.",
+                  "Order on or before 12pm for same-day delivery within Lagos and 72-hour shipping nationwide.",
               },
               {
                 title: "Seamless Checkout",

@@ -106,6 +106,18 @@ body {
   }
 }
 
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.95;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+}
+
 .animate-fadeIn {
   animation: fadeIn 0.3s ease-in-out;
 }
@@ -136,6 +148,10 @@ body {
 
 .animate-pulse-slow {
   animation: pulse 3s infinite;
+}
+
+.animate-breathe {
+  animation: breathe 2.6s ease-in-out infinite;
 }
 
 /* Stagger animation delays */
