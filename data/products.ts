@@ -124,7 +124,7 @@ const productSeeds: ProductSeed[] = [
     description: "Compact smart speaker with Alexa and improved bass.",
     detailedDescription:
       "The Echo Dot 5th Gen delivers clearer vocals, deeper bass, and Alexa voice control in a compact form. Manage your smart home, set reminders, and stream music hands-free using Wi-Fi and Bluetooth connectivity.",
-    price: 120000,
+    price: 175000,
     color: "Deep Sea Blue",
     spec: "Wi-Fi · Bluetooth · Alexa",
     image: "/productImg/amazondotspeaker.jpg",
