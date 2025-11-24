@@ -84,10 +84,10 @@ export default function ProductDetailPage() {
           Back
         </button>
 
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-12">
           {/* Product Image */}
           <div className="relative animate-slideInLeft">
-            <div className="relative h-[600px] overflow-hidden rounded-[32px] border border-secondary bg-secondary/70 shadow-[0_35px_70px_rgba(15,28,46,0.15)] transition-shadow duration-300">
+            <div className="relative h-[360px] overflow-hidden rounded-[32px] border border-secondary bg-secondary/70 shadow-[0_35px_70px_rgba(15,28,46,0.15)] transition-shadow duration-300 sm:h-[420px] md:h-[500px] lg:h-[600px]">
               <Image
                 src={product.image}
                 alt={product.name}

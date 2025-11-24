@@ -71,20 +71,20 @@ export default function Home() {
           ))}
           <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-primary/60 to-primary/90" />
         </div>
-        <div className="relative z-10 mx-auto max-w-6xl px-4 py-28 md:px-6 lg:px-8">
+        <div className="relative z-10 mx-auto max-w-6xl px-4 py-24 text-center md:px-6 md:text-left lg:px-8">
           <div className="space-y-8">
-            <span className="inline-flex items-center rounded-full border border-white/40 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em]">
+            <span className="inline-flex items-center justify-center rounded-full border border-white/40 bg-white/10 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.25em] sm:text-xs">
               Veston · Lagos
             </span>
-            <h1 className="text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
               Commerce for those who collect moments, not just things.
             </h1>
-            <p className="text-lg text-white/85 md:text-xl">
+            <p className="text-base text-white/85 sm:text-lg md:text-xl">
               Veston curates limited-run pieces across interiors, tech, and
               lifestyle essentials — crafted with African sensibilities and
               shipped nationwide in 72 hours.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center gap-4 md:justify-start">
               <Link
                 href="/products"
                 className="rounded-full bg-white px-8 py-3 text-sm font-semibold uppercase tracking-wide text-primary shadow-lg transition hover:-translate-y-1 hover:shadow-xl"
@@ -98,14 +98,14 @@ export default function Home() {
                 Learn About Veston
               </button>
             </div>
-            <div className="grid gap-4 md:grid-cols-3">
+            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
               {stats.map((stat) => (
                 <div
                   key={stat.label}
                   className="rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur"
                 >
                   <p className="text-2xl font-bold">{stat.value}</p>
-                  <p className="text-xs uppercase tracking-widest text-white/70">
+                  <p className="text-[11px] uppercase tracking-[0.4em] text-white/70">
                     {stat.label}
                   </p>
                 </div>
@@ -131,7 +131,7 @@ export default function Home() {
             )}
           </div>
         </div>
-        <div className="relative z-10 mx-auto flex max-w-4xl flex-wrap items-center justify-center gap-6 px-4 text-xs uppercase tracking-[0.5em] text-white/70">
+        <div className="relative z-10 mx-auto flex max-w-4xl flex-wrap items-center justify-center gap-4 px-4 text-[10px] uppercase tracking-[0.35em] text-white/70 sm:text-xs sm:gap-6">
           <span>Curated Drops</span>
           <span className="h-px w-6 bg-white/40" />
           <span>Ethical Sourcing</span>

@@ -22,14 +22,14 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Logo and Copyright */}
-          <div>
+          <div className="text-center sm:text-left">
             <Link
               href="/"
-              className="mb-4 block text-3xl font-black tracking-wide"
+              className="mb-4 inline-block text-3xl font-black tracking-wide"
             >
               Veston
             </Link>
-            <p className="mb-6 max-w-xs text-sm text-gray-300">
+            <p className="mb-6 mx-auto max-w-sm text-sm text-gray-300 sm:mx-0">
               Veston curates elevated essentials for modern African living —
               from statement interiors to everyday carry, each drop is sourced
               with intention.
@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
 
           {/* Talk to Us */}
-          <div>
+          <div className="text-center sm:text-left">
             <h3 className="mb-4 text-lg font-semibold">Talk to us</h3>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
@@ -65,7 +65,7 @@ export default function Footer() {
           </div>
 
           {/* Policies */}
-          <div>
+          <div className="text-center sm:text-left">
             <h3 className="mb-4 text-lg font-semibold">Policies</h3>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
@@ -88,7 +88,7 @@ export default function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div>
+          <div className="text-center sm:text-left">
             <h3 className="mb-4 text-lg font-semibold">Stay in the loop</h3>
             <p className="mb-4 text-sm text-gray-300">
               Receive early access to Veston drops, styling stories, and private
@@ -113,7 +113,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className="mt-10 border-t border-white/10 pt-8 text-center text-xs uppercase tracking-[0.4em] text-gray-400">
+        <p className="mt-10 border-t border-white/10 pt-8 text-center text-[11px] uppercase tracking-[0.35em] text-gray-400 sm:text-xs">
           © {new Date().getFullYear()} Veston. All Rights Reserved.
         </p>
       </div>
