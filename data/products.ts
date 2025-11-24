@@ -69,19 +69,6 @@ const productSeeds: ProductSeed[] = [
     availableSizes: ["14-inch", "16-inch"],
   },
   {
-    id: "macbookm2",
-    name: "MacBook Pro M2",
-    description: "Pro-level performance with the M2 chip in a portable design.",
-    detailedDescription:
-      "MacBook Pro M2 delivers exceptional performance with the M2 chip. Features a stunning Retina display, Touch ID, and impressive battery life. Perfect balance of power and portability.",
-    price: 2400000,
-    color: "Space Gray",
-    spec: "13-inch, 256GB",
-    image: "/productImg/macbookm2.jpg",
-    availableColors: ["Space Gray", "Silver"],
-    availableSizes: ["13-inch", "14-inch"],
-  },
-  {
     id: "macbookcharger",
     name: "MacBook Charger",
     description: "Official MagSafe charger for MacBook with fast charging.",
