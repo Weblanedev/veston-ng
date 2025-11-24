@@ -167,6 +167,20 @@ const productSeeds: ProductSeed[] = [
     availableColors: ["Graphite", "Matte Black"],
     availableSizes: ["Standard"],
   },
+
+  {
+    id: "smart-scent-pro",
+    name: "Green Lion Smart Scent Pro Diffuser",
+    description: "App-controlled electric diffuser with ambient lighting.",
+    detailedDescription:
+      "The Green Lion Smart Scent Pro Diffuser pairs a 500ml reservoir with ultrasonic misting, RGB ambient lighting, and Wi-Fi control via the companion app. Schedule sessions, adjust intensity, and maintain air quality in medium-to-large rooms.",
+    price: 256000,
+    color: "Black",
+    spec: "500ml · Wi-Fi · RGB ambient light",
+    image:
+      "/productImg/Green Lion Smart Scent Pro Fragrance Diffuser - Black.webp",
+    availableColors: ["Black"],
+  },
  
 ];
 
